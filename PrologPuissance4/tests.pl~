@@ -1,0 +1,1676 @@
+﻿%%%%%%%%%%%% Tests.pl %%%%%%%%%%%%
+% Quelques tests unitaires.
+
+:- use_module(jeu).
+:- use_module(util).
+:- use_module(miniMax).
+:- use_module(testIAs).
+
+%%%%% Tests heuristiques %%%%%
+
+t_IA2 :-
+        write("Début IA2\n"),
+        t_IA2_IA3,
+        t_IA2_IA4,
+        t_IA2_IA5,
+        t_IA2_IA6,
+        t_IA2_IA7,
+        t_IA2_IA8,
+        t_IA2_IA9,
+        t_IA2_IA10,
+        t_IA2_IA11,
+        t_IA2_IA12,
+        t_IA2_IA13,
+        t_IA2_IA14,
+        t_IA2_IA15,
+        t_IA2_IA16,
+        t_IA2_IA17,
+        t_IA2_IA18,
+        t_IA2_IA19,
+        t_IA2_IA20,
+        t_IA2_IA21,
+        t_IA2_IA22,
+        t_IA2_IA23,
+        t_IA2_IA24,
+        t_IA2_IA25,
+        t_IA2_IA26,
+        t_IA2_IA27,
+        t_IA2_IA28,
+        t_IA2_IA29,
+        t_IA2_IA30,
+        t_IA2_IA31,
+        t_IA2_IA32,
+        t_IA2_IA33,
+        t_IA2_IA34,
+        write("Fin IA2\n").
+
+t_IA3 :-
+        write("Début IA3\n"),
+        t_IA3_IA4,
+        t_IA3_IA5,
+        t_IA3_IA6,
+        t_IA3_IA7,
+        t_IA3_IA8,
+        t_IA3_IA9,
+        t_IA3_IA10,
+        t_IA3_IA11,
+        t_IA3_IA12,
+        t_IA3_IA13,
+        t_IA3_IA14,
+        t_IA3_IA15,
+        t_IA3_IA16,
+        t_IA3_IA17,
+        t_IA3_IA18,
+        t_IA3_IA19,
+        t_IA3_IA20,
+        t_IA3_IA21,
+        t_IA3_IA22,
+        t_IA3_IA23,
+        t_IA3_IA24,
+        t_IA3_IA25,
+        t_IA3_IA26,
+        t_IA3_IA27,
+        t_IA3_IA28,
+        t_IA3_IA29,
+        t_IA3_IA30,
+        t_IA3_IA31,
+        t_IA3_IA32,
+        t_IA3_IA33,
+        t_IA3_IA34,
+        write("Fin IA3\n").
+
+t_IA4 :-
+
+        write("Début IA4\n"),
+        t_IA4_IA5,
+        t_IA4_IA6,
+        t_IA4_IA7,
+        t_IA4_IA8,
+        t_IA4_IA9,
+        t_IA4_IA10,
+        t_IA4_IA11,
+        t_IA4_IA12,
+        t_IA4_IA13,
+        t_IA4_IA14,
+        t_IA4_IA15,
+        t_IA4_IA16,
+        t_IA4_IA17,
+        t_IA4_IA18,
+        t_IA4_IA19,
+        t_IA4_IA20,
+        t_IA4_IA21,
+        t_IA4_IA22,
+        t_IA4_IA23,
+        t_IA4_IA24,
+        t_IA4_IA25,
+        t_IA4_IA26,
+        t_IA4_IA27,
+        t_IA4_IA28,
+        t_IA4_IA29,
+        t_IA4_IA30,
+        t_IA4_IA31,
+        t_IA4_IA32,
+        t_IA4_IA33,
+        t_IA4_IA34,
+        write("Fin IA4\n").
+
+ t_IA5 :-
+
+        write("Début IA5\n"),
+        t_IA5_IA6,
+        t_IA5_IA7,
+        t_IA5_IA8,
+        t_IA5_IA9,
+        t_IA5_IA10,
+        t_IA5_IA11,
+        t_IA5_IA12,
+        t_IA5_IA13,
+        t_IA5_IA14,
+        t_IA5_IA15,
+        t_IA5_IA16,
+        t_IA5_IA17,
+        t_IA5_IA18,
+        t_IA5_IA19,
+        t_IA5_IA20,
+        t_IA5_IA21,
+        t_IA5_IA22,
+        t_IA5_IA23,
+        t_IA5_IA24,
+        t_IA5_IA25,
+        t_IA5_IA26,
+        t_IA5_IA27,
+        t_IA5_IA28,
+        t_IA5_IA29,
+        t_IA5_IA30,
+        t_IA5_IA31,
+        t_IA5_IA32,
+        t_IA5_IA33,
+        t_IA5_IA34,
+        write("Fin IA5\n").
+
+t_IA6 :-
+        write("Début IA6\n"),
+        t_IA6_IA7,
+        t_IA6_IA8,
+        t_IA6_IA9,
+        t_IA6_IA10,
+        t_IA6_IA11,
+        t_IA6_IA12,
+        t_IA6_IA13,
+        t_IA6_IA14,
+        t_IA6_IA15,
+        t_IA6_IA16,
+        t_IA6_IA17,
+        t_IA6_IA18,
+        t_IA6_IA19,
+        t_IA6_IA20,
+        t_IA6_IA21,
+        t_IA6_IA22,
+        t_IA6_IA23,
+        t_IA6_IA24,
+        t_IA6_IA25,
+        t_IA6_IA26,
+        t_IA6_IA27,
+        t_IA6_IA28,
+        t_IA6_IA29,
+        t_IA6_IA30,
+        t_IA6_IA31,
+        t_IA6_IA32,
+        t_IA6_IA33,
+        t_IA6_IA34,
+        write("Fin IA6\n").
+
+t_IA7 :-
+        write("Début IA7\n"),
+        t_IA7_IA8,
+        t_IA7_IA9,
+        t_IA7_IA10,
+        t_IA7_IA11,
+        t_IA7_IA12,
+        t_IA7_IA13,
+        t_IA7_IA14,
+        t_IA7_IA15,
+        t_IA7_IA16,
+        t_IA7_IA17,
+        t_IA7_IA18,
+        t_IA7_IA19,
+        t_IA7_IA20,
+        t_IA7_IA21,
+        t_IA7_IA22,
+        t_IA7_IA23,
+        t_IA7_IA24,
+        t_IA7_IA25,
+        t_IA7_IA26,
+        t_IA7_IA27,
+        t_IA7_IA28,
+        t_IA7_IA29,
+        t_IA7_IA30,
+        t_IA7_IA31,
+        t_IA7_IA32,
+        t_IA7_IA33,
+        t_IA7_IA34,
+        write("Fin IA7\n").
+
+t_IA8 :-
+        write("Début IA8\n"),
+        t_IA8_IA9,
+        t_IA8_IA10,
+        t_IA8_IA11,
+        t_IA8_IA12,
+        t_IA8_IA13,
+        t_IA8_IA14,
+        t_IA8_IA15,
+        t_IA8_IA16,
+        t_IA8_IA17,
+        t_IA8_IA18,
+        t_IA8_IA19,
+        t_IA8_IA20,
+        t_IA8_IA21,
+        t_IA8_IA22,
+        t_IA8_IA23,
+        t_IA8_IA24,
+        t_IA8_IA25,
+        t_IA8_IA26,
+        t_IA8_IA27,
+        t_IA8_IA28,
+        t_IA8_IA29,
+        t_IA8_IA30,
+        t_IA8_IA31,
+        t_IA8_IA32,
+        t_IA8_IA33,
+        t_IA8_IA34,
+        write("Fin IA8\n").
+
+
+t_IA9 :-
+        write("Début IA9\n"),
+        t_IA9_IA10,
+        t_IA9_IA11,
+        t_IA9_IA12,
+        t_IA9_IA13,
+        t_IA9_IA14,
+        t_IA9_IA15,
+        t_IA9_IA16,
+        t_IA9_IA17,
+        t_IA9_IA18,
+        t_IA9_IA19,
+        t_IA9_IA20,
+        t_IA9_IA21,
+        t_IA9_IA22,
+        t_IA9_IA23,
+        t_IA9_IA24,
+        t_IA9_IA25,
+        t_IA9_IA26,
+        t_IA9_IA27,
+        t_IA9_IA28,
+        t_IA9_IA29,
+        t_IA9_IA30,
+        t_IA9_IA31,
+        t_IA9_IA32,
+        t_IA9_IA33,
+        t_IA9_IA34,
+        write("Fin IA9\n").
+
+t_IA10 :-
+        write("Début IA10\n"),
+        t_IA10_IA11,
+        t_IA10_IA12,
+        t_IA10_IA13,
+        t_IA10_IA14,
+        t_IA10_IA15,
+        t_IA10_IA16,
+        t_IA10_IA17,
+        t_IA10_IA18,
+        t_IA10_IA19,
+        t_IA10_IA20,
+        t_IA10_IA21,
+        t_IA10_IA22,
+        t_IA10_IA23,
+        t_IA10_IA24,
+        t_IA10_IA25,
+        t_IA10_IA26,
+        t_IA10_IA27,
+        t_IA10_IA28,
+        t_IA10_IA29,
+        t_IA10_IA30,
+        t_IA10_IA31,
+        t_IA10_IA32,
+        t_IA10_IA33,
+        t_IA10_IA34,
+        write("Fin IA10\n").
+
+t_IA11 :-
+        write("Début IA11\n"),
+        t_IA11_IA12,
+        t_IA11_IA13,
+        t_IA11_IA14,
+        t_IA11_IA15,
+        t_IA11_IA16,
+        t_IA11_IA17,
+        t_IA11_IA18,
+        t_IA11_IA19,
+        t_IA11_IA20,
+        t_IA11_IA21,
+        t_IA11_IA22,
+        t_IA11_IA23,
+        t_IA11_IA24,
+        t_IA11_IA25,
+        t_IA11_IA26,
+        t_IA11_IA27,
+        t_IA11_IA28,
+        t_IA11_IA29,
+        t_IA11_IA30,
+        t_IA11_IA31,
+        t_IA11_IA32,
+        t_IA11_IA33,
+        t_IA11_IA34,
+        write("Fin IA11\n").
+
+t_IA12 :-
+        write("Début IA12\n"),
+        t_IA12_IA13,
+        t_IA12_IA14,
+        t_IA12_IA15,
+        t_IA12_IA16,
+        t_IA12_IA17,
+        t_IA12_IA18,
+        t_IA12_IA19,
+        t_IA12_IA20,
+        t_IA12_IA21,
+        t_IA12_IA22,
+        t_IA12_IA23,
+        t_IA12_IA24,
+        t_IA12_IA25,
+        t_IA12_IA26,
+        t_IA12_IA27,
+        t_IA12_IA28,
+        t_IA12_IA29,
+        t_IA12_IA30,
+        t_IA12_IA31,
+        t_IA12_IA32,
+        t_IA12_IA33,
+        t_IA12_IA34,
+        write("Fin IA12\n").
+
+t_IA13 :-
+        write("Début IA13\n"),
+        t_IA13_IA14,
+        t_IA13_IA15,
+        t_IA13_IA16,
+        t_IA13_IA17,
+        t_IA13_IA18,
+        t_IA13_IA19,
+        t_IA13_IA20,
+        t_IA13_IA21,
+        t_IA13_IA22,
+        t_IA13_IA23,
+        t_IA13_IA24,
+        t_IA13_IA25,
+        t_IA13_IA26,
+        t_IA13_IA27,
+        t_IA13_IA28,
+        t_IA13_IA29,
+        t_IA13_IA30,
+        t_IA13_IA31,
+        t_IA13_IA32,
+        t_IA13_IA33,
+        t_IA13_IA34,
+        write("Fin IA13\n").
+
+t_IA14 :-
+        write("Début IA14\n"),
+        t_IA14_IA15,
+        t_IA14_IA16,
+        t_IA14_IA17,
+        t_IA14_IA18,
+        t_IA14_IA19,
+        t_IA14_IA20,
+        t_IA14_IA21,
+        t_IA14_IA22,
+        t_IA14_IA23,
+        t_IA14_IA24,
+        t_IA14_IA25,
+        t_IA14_IA26,
+        t_IA14_IA27,
+        t_IA14_IA28,
+        t_IA14_IA29,
+        t_IA14_IA30,
+        t_IA14_IA31,
+        t_IA14_IA32,
+        t_IA14_IA33,
+        t_IA14_IA34,
+        write("Fin IA14\n").
+
+t_IA15 :-
+        write("Début IA15\n"),
+        t_IA15_IA16,
+        t_IA15_IA17,
+        t_IA15_IA18,
+        t_IA15_IA19,
+        t_IA15_IA20,
+        t_IA15_IA21,
+        t_IA15_IA22,
+        t_IA15_IA23,
+        t_IA15_IA24,
+        t_IA15_IA25,
+        t_IA15_IA26,
+        t_IA15_IA27,
+        t_IA15_IA28,
+        t_IA15_IA29,
+        t_IA15_IA30,
+        t_IA15_IA31,
+        t_IA15_IA32,
+        t_IA15_IA33,
+        t_IA15_IA34,
+        write("Fin IA15\n").
+
+t_IA16 :-
+        write("Début IA16\n"),
+        t_IA16_IA17,
+        t_IA16_IA18,
+        t_IA16_IA19,
+        t_IA16_IA20,
+        t_IA16_IA21,
+        t_IA16_IA22,
+        t_IA16_IA23,
+        t_IA16_IA24,
+        t_IA16_IA25,
+        t_IA16_IA26,
+        t_IA16_IA27,
+        t_IA16_IA28,
+        t_IA16_IA29,
+        t_IA16_IA30,
+        t_IA16_IA31,
+        t_IA16_IA32,
+        t_IA16_IA33,
+        t_IA16_IA34,
+        write("Fin IA16\n").
+
+t_IA32 :-
+        write("Début IA32\n"),
+        t_IA32_IA33,
+        t_IA32_IA34,
+        write("Fin IA32\n").
+
+
+t_IA33 :-
+        write("Début IA33\n"),
+        t_IA33_IA34,
+        write("Fin IA33\n").
+
+
+
+%Ia2
+
+t_IA2_IA3 :-
+	runTest(200,2,3).
+
+t_IA2_IA4 :-
+	runTest(200,2,4).
+
+t_IA2_IA5 :-
+	runTest(200,2,5).
+
+t_IA2_IA6 :-
+	runTest(200,2,6).
+
+t_IA2_IA7 :-
+	runTest(200,2,7).
+
+t_IA2_IA8 :-
+	runTest(200,2,8).
+
+t_IA2_IA9 :-
+	runTest(200,2,9).
+
+t_IA2_IA10 :-
+	runTest(200,2,10).
+
+t_IA2_IA11 :-
+	runTest(200,2,11).
+
+t_IA2_IA12 :-
+	runTest(200,2,12).
+
+t_IA2_IA13 :-
+	runTest(200,2,13).
+
+t_IA2_IA14 :-
+	runTest(200,2,14).
+
+t_IA2_IA15 :-
+	runTest(200,2,15).
+
+t_IA2_IA16 :-
+	runTest(200,2,15).
+
+t_IA2_IA17 :-
+	runTest(200,2,17).
+
+t_IA2_IA18 :-
+	runTest(200,2,18).
+
+t_IA2_IA19 :-
+	runTest(200,2,19).
+
+t_IA2_IA20 :-
+	runTest(200,2,20).
+
+t_IA2_IA21 :-
+	runTest(200,2,21).
+
+t_IA2_IA22 :-
+	runTest(200,2,22).
+
+t_IA2_IA23 :-
+	runTest(200,2,23).
+
+t_IA2_IA24 :-
+	runTest(200,2,24).
+
+t_IA2_IA25 :-
+	runTest(200,2,25).
+
+t_IA2_IA26 :-
+	runTest(200,2,26).
+
+t_IA2_IA27 :-
+	runTest(200,2,27).
+
+t_IA2_IA28 :-
+	runTest(200,2,28).
+
+t_IA2_IA29 :-
+	runTest(200,2,29).
+
+t_IA2_IA30 :-
+	runTest(200,2,30).
+
+t_IA2_IA31 :-
+	runTest(200,2,31).
+
+t_IA2_IA32 :-
+	runTest(200,2,32).
+
+t_IA2_IA33 :-
+	runTest(200,2,33).
+
+t_IA2_IA34 :-
+	runTest(200,2,34).
+
+
+%Ia3
+t_IA3_IA4 :-
+	runTest(200,3,4).
+
+t_IA3_IA5 :-
+	runTest(200,3,5).
+
+t_IA3_IA6 :-
+	runTest(200,3,6).
+
+t_IA3_IA7 :-
+	runTest(200,3,7).
+
+t_IA3_IA8 :-
+	runTest(200,3,8).
+
+t_IA3_IA9 :-
+	runTest(200,3,9).
+
+t_IA3_IA10 :-
+	runTest(200,3,10).
+
+t_IA3_IA11 :-
+	runTest(200,3,11).
+
+t_IA3_IA12 :-
+	runTest(200,3,12).
+
+t_IA3_IA13 :-
+	runTest(200,3,13).
+
+t_IA3_IA14 :-
+	runTest(200,3,14).
+
+t_IA3_IA15 :-
+	runTest(200,3,15).
+
+t_IA3_IA16 :-
+	runTest(200,3,15).
+
+t_IA3_IA17 :-
+	runTest(200,3,17).
+
+t_IA3_IA18 :-
+	runTest(200,3,18).
+
+t_IA3_IA19 :-
+	runTest(200,3,19).
+
+t_IA3_IA20 :-
+	runTest(200,3,20).
+
+t_IA3_IA21 :-
+	runTest(200,3,21).
+
+t_IA3_IA22 :-
+	runTest(200,3,22).
+
+t_IA3_IA23 :-
+	runTest(200,3,23).
+
+t_IA3_IA24 :-
+	runTest(200,3,24).
+
+t_IA3_IA25 :-
+	runTest(200,3,25).
+
+t_IA3_IA26 :-
+	runTest(200,3,26).
+
+t_IA3_IA27 :-
+	runTest(200,3,27).
+
+t_IA3_IA28 :-
+	runTest(200,3,28).
+
+t_IA3_IA29 :-
+	runTest(200,3,29).
+
+t_IA3_IA30 :-
+	runTest(200,3,30).
+
+t_IA3_IA31 :-
+	runTest(200,3,31).
+
+t_IA3_IA32 :-
+	runTest(200,3,32).
+
+t_IA3_IA33 :-
+	runTest(200,3,33).
+
+t_IA3_IA34 :-
+	runTest(200,3,34).
+
+
+%IA4
+t_IA4_IA5 :-
+	runTest(200,4,5).
+
+t_IA4_IA6 :-
+	runTest(200,4,6).
+
+t_IA4_IA7 :-
+	runTest(200,4,7).
+
+t_IA4_IA8 :-
+	runTest(200,4,8).
+
+t_IA4_IA9 :-
+	runTest(200,4,9).
+
+t_IA4_IA10 :-
+	runTest(200,4,10).
+
+t_IA4_IA11 :-
+	runTest(200,4,11).
+
+t_IA4_IA12 :-
+	runTest(200,4,12).
+
+t_IA4_IA13 :-
+	runTest(200,4,13).
+
+t_IA4_IA14 :-
+	runTest(200,4,14).
+
+t_IA4_IA15 :-
+	runTest(200,4,15).
+
+t_IA4_IA16 :-
+	runTest(200,4,15).
+
+t_IA4_IA17 :-
+	runTest(200,4,17).
+
+t_IA4_IA18 :-
+	runTest(200,4,18).
+
+t_IA4_IA19 :-
+	runTest(200,4,19).
+
+t_IA4_IA20 :-
+	runTest(200,4,20).
+
+t_IA4_IA21 :-
+	runTest(200,4,21).
+
+t_IA4_IA22 :-
+	runTest(200,4,22).
+
+t_IA4_IA23 :-
+	runTest(200,4,23).
+
+t_IA4_IA24 :-
+	runTest(200,4,24).
+
+t_IA4_IA25 :-
+	runTest(200,4,25).
+
+t_IA4_IA26 :-
+	runTest(200,4,26).
+
+t_IA4_IA27 :-
+	runTest(200,4,27).
+
+t_IA4_IA28 :-
+	runTest(200,4,28).
+
+t_IA4_IA29 :-
+	runTest(200,4,29).
+
+t_IA4_IA30 :-
+	runTest(200,4,30).
+
+t_IA4_IA31 :-
+	runTest(200,4,31).
+
+t_IA4_IA32 :-
+	runTest(200,4,32).
+
+t_IA4_IA33 :-
+	runTest(200,4,33).
+
+t_IA4_IA34 :-
+	runTest(200,4,34).
+
+
+%IA5
+
+t_IA5_IA6 :-
+	runTest(200,5,6).
+
+t_IA5_IA7 :-
+	runTest(200,5,7).
+
+t_IA5_IA8 :-
+	runTest(200,5,8).
+
+t_IA5_IA9 :-
+	runTest(200,5,9).
+
+t_IA5_IA10 :-
+	runTest(200,5,10).
+
+t_IA5_IA11 :-
+	runTest(200,5,11).
+
+t_IA5_IA12 :-
+	runTest(200,5,12).
+
+t_IA5_IA13 :-
+	runTest(200,5,13).
+
+t_IA5_IA14 :-
+	runTest(200,5,14).
+
+t_IA5_IA15 :-
+	runTest(200,5,15).
+
+t_IA5_IA16 :-
+	runTest(200,5,15).
+
+t_IA5_IA17 :-
+	runTest(200,5,17).
+
+t_IA5_IA18 :-
+	runTest(200,5,18).
+
+t_IA5_IA19 :-
+	runTest(200,5,19).
+
+t_IA5_IA20 :-
+	runTest(200,5,20).
+
+t_IA5_IA21 :-
+	runTest(200,5,21).
+
+t_IA5_IA22 :-
+	runTest(200,5,22).
+
+t_IA5_IA23 :-
+	runTest(200,5,23).
+
+t_IA5_IA24 :-
+	runTest(200,5,24).
+
+t_IA5_IA25 :-
+	runTest(200,5,25).
+
+t_IA5_IA26 :-
+	runTest(200,5,26).
+
+t_IA5_IA27 :-
+	runTest(200,5,27).
+
+t_IA5_IA28 :-
+	runTest(200,5,28).
+
+t_IA5_IA29 :-
+	runTest(200,5,29).
+
+t_IA5_IA30 :-
+	runTest(200,5,30).
+
+t_IA5_IA31 :-
+	runTest(200,5,31).
+
+t_IA5_IA32 :-
+	runTest(200,5,32).
+
+t_IA5_IA33 :-
+	runTest(200,5,33).
+
+t_IA5_IA34 :-
+	runTest(200,5,34).
+
+
+%Ia6
+
+t_IA6_IA7 :-
+	runTest(200,6,7).
+
+t_IA6_IA8 :-
+	runTest(200,6,8).
+
+t_IA6_IA9 :-
+	runTest(200,6,9).
+
+t_IA6_IA10 :-
+	runTest(200,6,10).
+
+t_IA6_IA11 :-
+	runTest(200,6,11).
+
+t_IA6_IA12 :-
+	runTest(200,6,12).
+
+t_IA6_IA13 :-
+	runTest(200,6,13).
+
+t_IA6_IA14 :-
+	runTest(200,6,14).
+
+t_IA6_IA15 :-
+	runTest(200,6,15).
+
+t_IA6_IA16 :-
+	runTest(200,6,15).
+
+t_IA6_IA17 :-
+	runTest(200,6,17).
+
+t_IA6_IA18 :-
+	runTest(200,6,18).
+
+t_IA6_IA19 :-
+	runTest(200,6,19).
+
+t_IA6_IA20 :-
+	runTest(200,6,20).
+
+t_IA6_IA21 :-
+	runTest(200,6,21).
+
+t_IA6_IA22 :-
+	runTest(200,6,22).
+
+t_IA6_IA23 :-
+	runTest(200,6,23).
+
+t_IA6_IA24 :-
+	runTest(200,6,24).
+
+t_IA6_IA25 :-
+	runTest(200,6,25).
+
+t_IA6_IA26 :-
+	runTest(200,6,26).
+
+t_IA6_IA27 :-
+	runTest(200,6,27).
+
+t_IA6_IA28 :-
+	runTest(200,6,28).
+t_IA6_IA29 :-
+	runTest(200,6,29).
+
+t_IA6_IA30 :-
+	runTest(200,6,30).
+
+t_IA6_IA31 :-
+	runTest(200,6,31).
+
+t_IA6_IA32 :-
+	runTest(200,6,32).
+
+t_IA6_IA33 :-
+	runTest(200,6,33).
+
+t_IA6_IA34 :-
+	runTest(200,6,34).
+
+
+
+%IA7
+
+t_IA7_IA8 :-
+	runTest(200,7,8).
+
+t_IA7_IA9 :-
+	runTest(200,7,9).
+
+t_IA7_IA10 :-
+	runTest(200,7,10).
+
+t_IA7_IA11 :-
+	runTest(200,7,11).
+
+t_IA7_IA12 :-
+	runTest(200,7,12).
+
+t_IA7_IA13 :-
+	runTest(200,7,13).
+
+t_IA7_IA14 :-
+	runTest(200,7,14).
+
+t_IA7_IA15 :-
+	runTest(200,7,15).
+
+t_IA7_IA16 :-
+	runTest(200,7,16).
+
+t_IA7_IA17 :-
+	runTest(200,7,17).
+
+t_IA7_IA18 :-
+	runTest(200,7,18).
+
+t_IA7_IA19 :-
+	runTest(200,7,19).
+
+t_IA7_IA20 :-
+	runTest(200,7,20).
+
+t_IA7_IA21 :-
+	runTest(200,7,21).
+
+t_IA7_IA22 :-
+	runTest(200,7,22).
+
+t_IA7_IA23 :-
+	runTest(200,7,23).
+
+t_IA7_IA24 :-
+	runTest(200,7,24).
+
+t_IA7_IA25 :-
+	runTest(200,7,25).
+
+t_IA7_IA26 :-
+	runTest(200,7,26).
+
+t_IA7_IA27 :-
+	runTest(200,7,27).
+
+t_IA7_IA28 :-
+	runTest(200,7,28).
+
+t_IA7_IA29 :-
+	runTest(200,7,29).
+
+t_IA7_IA30 :-
+	runTest(200,7,30).
+
+t_IA7_IA31 :-
+	runTest(200,7,31).
+
+t_IA7_IA32 :-
+	runTest(200,7,32).
+
+t_IA7_IA33 :-
+	runTest(200,7,33).
+
+t_IA7_IA34 :-
+	runTest(200,7,34).
+
+
+
+%IA8
+t_IA8_IA9 :-
+	runTest(200,8,9).
+
+t_IA8_IA10 :-
+	runTest(200,8,10).
+
+t_IA8_IA11 :-
+	runTest(200,8,11).
+
+t_IA8_IA12 :-
+	runTest(200,8,12).
+
+t_IA8_IA13 :-
+	runTest(200,8,13).
+
+t_IA8_IA14 :-
+	runTest(200,8,14).
+
+t_IA8_IA15 :-
+	runTest(200,8,15).
+
+t_IA8_IA16 :-
+	runTest(200,8,16).
+
+t_IA8_IA17 :-
+	runTest(200,8,17).
+
+t_IA8_IA18 :-
+	runTest(200,8,18).
+
+t_IA8_IA19 :-
+	runTest(200,8,19).
+
+t_IA8_IA20 :-
+	runTest(200,8,20).
+
+t_IA8_IA21 :-
+	runTest(200,8,21).
+
+t_IA8_IA22 :-
+	runTest(200,8,22).
+
+t_IA8_IA23 :-
+	runTest(200,8,23).
+
+t_IA8_IA24 :-
+	runTest(200,8,24).
+
+t_IA8_IA25 :-
+	runTest(200,8,25).
+
+t_IA8_IA26 :-
+	runTest(200,8,26).
+
+t_IA8_IA27 :-
+	runTest(200,8,27).
+
+t_IA8_IA28 :-
+	runTest(200,8,28).
+
+t_IA8_IA29 :-
+	runTest(200,8,29).
+t_IA8_IA30 :-
+	runTest(200,8,30).
+
+t_IA8_IA31 :-
+	runTest(200,8,31).
+
+t_IA8_IA32 :-
+	runTest(200,8,32).
+
+t_IA8_IA33 :-
+	runTest(200,8,33).
+
+t_IA8_IA34 :-
+	runTest(200,8,34).
+
+
+%IA9
+
+t_IA9_IA10 :-
+	runTest(200,9,10).
+
+t_IA9_IA11 :-
+	runTest(200,9,11).
+
+t_IA9_IA12 :-
+	runTest(200,9,12).
+
+t_IA9_IA13 :-
+	runTest(200,9,13).
+
+t_IA9_IA14 :-
+	runTest(200,9,14).
+
+t_IA9_IA15 :-
+	runTest(200,9,15).
+
+t_IA9_IA16 :-
+	runTest(200,9,16).
+
+t_IA9_IA17 :-
+	runTest(200,9,17).
+
+t_IA9_IA18 :-
+	runTest(200,9,18).
+
+t_IA9_IA19 :-
+	runTest(200,9,19).
+
+t_IA9_IA20 :-
+	runTest(200,9,20).
+
+t_IA9_IA21 :-
+	runTest(200,9,21).
+
+t_IA9_IA22 :-
+	runTest(200,9,22).
+
+t_IA9_IA23 :-
+	runTest(200,9,23).
+
+t_IA9_IA24 :-
+	runTest(200,9,24).
+
+t_IA9_IA25 :-
+	runTest(200,9,25).
+
+t_IA9_IA26 :-
+	runTest(200,9,26).
+
+t_IA9_IA27 :-
+	runTest(200,9,27).
+
+t_IA9_IA28 :-
+	runTest(200,9,28).
+
+t_IA9_IA29 :-
+	runTest(200,9,29).
+
+t_IA9_IA30 :-
+	runTest(200,9,30).
+
+t_IA9_IA31 :-
+	runTest(200,9,31).
+
+t_IA9_IA32 :-
+	runTest(200,9,32).
+
+t_IA9_IA33 :-
+	runTest(200,9,33).
+
+t_IA9_IA34 :-
+	runTest(200,9,34).
+
+
+%IA10
+t_IA10_IA11 :-
+	runTest(200,10,11).
+
+t_IA10_IA12 :-
+	runTest(200,10,12).
+
+t_IA10_IA13 :-
+	runTest(200,10,13).
+
+t_IA10_IA14 :-
+	runTest(200,10,14).
+
+t_IA10_IA15 :-
+	runTest(200,10,15).
+
+t_IA10_IA16 :-
+	runTest(200,10,16).
+
+t_IA10_IA17 :-
+	runTest(200,10,17).
+
+t_IA10_IA18 :-
+	runTest(200,10,18).
+
+t_IA10_IA19 :-
+	runTest(200,10,19).
+
+t_IA10_IA20 :-
+	runTest(200,10,20).
+
+t_IA10_IA21 :-
+	runTest(200,10,21).
+
+t_IA10_IA22 :-
+	runTest(200,10,22).
+
+t_IA10_IA23 :-
+	runTest(200,10,23).
+
+t_IA10_IA24 :-
+	runTest(200,10,24).
+
+t_IA10_IA25 :-
+	runTest(200,10,25).
+
+t_IA10_IA26 :-
+	runTest(200,10,26).
+
+t_IA10_IA27 :-
+	runTest(200,10,27).
+
+t_IA10_IA28 :-
+	runTest(200,10,28).
+
+t_IA10_IA29 :-
+	runTest(200,10,29).
+
+t_IA10_IA30 :-
+	runTest(200,10,30).
+
+t_IA10_IA31 :-
+	runTest(200,10,31).
+
+t_IA10_IA32 :-
+	runTest(200,10,32).
+
+t_IA10_IA33 :-
+	runTest(200,10,33).
+
+t_IA10_IA34 :-
+	runTest(200,10,34).
+
+%IA11
+t_IA11_IA12 :-
+	runTest(200,11,12).
+
+t_IA11_IA13 :-
+	runTest(200,11,13).
+
+t_IA11_IA14 :-
+	runTest(200,11,14).
+
+t_IA11_IA15 :-
+	runTest(200,11,15).
+
+t_IA11_IA16 :-
+	runTest(200,11,16).
+
+t_IA11_IA17 :-
+	runTest(200,11,17).
+
+t_IA11_IA18 :-
+	runTest(200,11,18).
+
+t_IA11_IA19 :-
+	runTest(200,11,19).
+
+t_IA11_IA20 :-
+	runTest(200,11,20).
+
+t_IA11_IA21 :-
+	runTest(200,11,21).
+
+t_IA11_IA22 :-
+	runTest(200,11,22).
+
+t_IA11_IA23 :-
+	runTest(200,11,23).
+
+t_IA11_IA24 :-
+	runTest(200,11,24).
+
+t_IA11_IA25 :-
+	runTest(200,11,25).
+
+t_IA11_IA26 :-
+	runTest(200,11,26).
+
+t_IA11_IA27 :-
+	runTest(200,11,27).
+
+t_IA11_IA28 :-
+	runTest(200,11,28).
+
+t_IA11_IA29 :-
+	runTest(200,11,29).
+
+t_IA11_IA30 :-
+	runTest(200,11,30).
+
+t_IA11_IA31 :-
+	runTest(200,11,31).
+
+t_IA11_IA32 :-
+	runTest(200,11,32).
+
+t_IA11_IA33 :-
+	runTest(200,11,33).
+
+t_IA11_IA34 :-
+	runTest(200,11,34).
+
+%IA12
+
+t_IA12_IA13 :-
+	runTest(200,12,13).
+
+t_IA12_IA14 :-
+	runTest(200,12,14).
+
+t_IA12_IA15 :-
+	runTest(200,12,15).
+
+t_IA12_IA16 :-
+	runTest(200,12,16).
+
+t_IA12_IA17 :-
+	runTest(200,12,17).
+
+t_IA12_IA18 :-
+	runTest(200,12,18).
+
+t_IA12_IA19 :-
+	runTest(200,12,19).
+
+t_IA12_IA20 :-
+	runTest(200,12,20).
+
+t_IA12_IA21 :-
+	runTest(200,12,21).
+
+t_IA12_IA22 :-
+	runTest(200,12,22).
+
+t_IA12_IA23 :-
+	runTest(200,12,23).
+
+t_IA12_IA24 :-
+	runTest(200,12,24).
+
+t_IA12_IA25 :-
+	runTest(200,12,25).
+
+t_IA12_IA26 :-
+	runTest(200,12,26).
+
+t_IA12_IA27 :-
+	runTest(200,12,27).
+
+t_IA12_IA28 :-
+	runTest(200,12,28).
+
+t_IA12_IA29 :-
+	runTest(200,12,29).
+
+t_IA12_IA30 :-
+	runTest(200,12,30).
+
+t_IA12_IA31 :-
+	runTest(200,12,31).
+
+t_IA12_IA32 :-
+	runTest(200,12,32).
+
+t_IA12_IA33 :-
+	runTest(200,12,33).
+
+t_IA12_IA34 :-
+	runTest(200,12,34).
+
+%IA13
+
+t_IA13_IA14 :-
+	runTest(200,13,14).
+
+t_IA13_IA15 :-
+	runTest(200,13,15).
+
+t_IA13_IA16 :-
+	runTest(200,13,16).
+
+t_IA13_IA17 :-
+	runTest(200,13,17).
+
+t_IA13_IA18 :-
+	runTest(200,13,18).
+
+t_IA13_IA19 :-
+	runTest(200,13,19).
+
+t_IA13_IA20 :-
+	runTest(200,13,20).
+
+t_IA13_IA21 :-
+	runTest(200,13,21).
+
+t_IA13_IA22 :-
+	runTest(200,13,22).
+
+t_IA13_IA23 :-
+	runTest(200,13,23).
+
+t_IA13_IA24 :-
+	runTest(200,13,24).
+
+t_IA13_IA25 :-
+	runTest(200,13,25).
+
+t_IA13_IA26 :-
+	runTest(200,13,26).
+
+t_IA13_IA27 :-
+	runTest(200,13,27).
+
+t_IA13_IA28 :-
+	runTest(200,13,28).
+
+t_IA13_IA29 :-
+	runTest(200,13,29).
+
+t_IA13_IA30 :-
+	runTest(200,13,30).
+
+t_IA13_IA31 :-
+	runTest(200,13,31).
+
+t_IA13_IA32 :-
+	runTest(200,13,32).
+
+t_IA13_IA33 :-
+	runTest(200,13,33).
+
+t_IA13_IA34 :-
+	runTest(200,13,34).
+
+%IA14
+t_IA14_IA15 :-
+	runTest(200,12,15).
+
+t_IA14_IA16 :-
+	runTest(200,12,16).
+
+t_IA14_IA17 :-
+	runTest(200,12,17).
+
+t_IA14_IA18 :-
+	runTest(200,12,18).
+
+t_IA14_IA19 :-
+	runTest(200,12,19).
+
+t_IA14_IA20 :-
+	runTest(200,12,20).
+
+t_IA14_IA21 :-
+	runTest(200,12,21).
+
+t_IA14_IA22 :-
+	runTest(200,12,22).
+
+t_IA14_IA23 :-
+	runTest(200,12,23).
+
+t_IA14_IA24 :-
+	runTest(200,12,24).
+
+t_IA14_IA25 :-
+	runTest(200,12,25).
+
+t_IA14_IA26 :-
+	runTest(200,12,26).
+
+t_IA14_IA27 :-
+	runTest(200,12,27).
+
+t_IA14_IA28 :-
+	runTest(200,12,28).
+
+t_IA14_IA29 :-
+	runTest(200,12,29).
+
+t_IA14_IA30 :-
+	runTest(200,12,30).
+
+t_IA14_IA31 :-
+	runTest(200,12,31).
+
+t_IA14_IA32 :-
+	runTest(200,12,32).
+
+t_IA14_IA33 :-
+	runTest(200,12,33).
+
+t_IA14_IA34 :-
+	runTest(200,12,34).
+
+%IA15
+t_IA15_IA16 :-
+	runTest(200,15,16).
+
+t_IA15_IA17 :-
+	runTest(200,15,17).
+
+t_IA15_IA18 :-
+	runTest(200,15,18).
+
+t_IA15_IA19 :-
+	runTest(200,15,19).
+
+t_IA15_IA20 :-
+	runTest(200,15,20).
+
+t_IA15_IA21 :-
+	runTest(200,15,21).
+
+t_IA15_IA22 :-
+	runTest(200,15,22).
+
+t_IA15_IA23 :-
+	runTest(200,15,23).
+
+t_IA15_IA24 :-
+	runTest(200,15,24).
+
+t_IA15_IA25 :-
+	runTest(200,15,25).
+
+t_IA15_IA26 :-
+	runTest(200,15,26).
+
+t_IA15_IA27 :-
+	runTest(200,15,27).
+
+t_IA15_IA28 :-
+	runTest(200,15,28).
+
+t_IA15_IA29 :-
+	runTest(200,15,29).
+
+t_IA15_IA30 :-
+	runTest(200,15,30).
+
+t_IA15_IA31 :-
+	runTest(200,15,31).
+
+t_IA15_IA32 :-
+	runTest(200,15,32).
+
+t_IA15_IA33 :-
+	runTest(200,15,33).
+
+t_IA15_IA34 :-
+	runTest(200,15,34).
+
+time :-
+        initTests,
+	write('Temps IA 2 : '),
+	time(obtenirCoup(_,2,_)),
+	initTests,
+	write('Temps IA 3 : '),
+	time(obtenirCoup(_,3,_)),
+	initTests,
+	write('Temps IA 4 : '),
+	time(obtenirCoup(_,4,_)),
+	initTests,
+	write('Temps IA 5 : '),
+	time(obtenirCoup(_,5,_)),
+	initTests,
+	write('Temps IA 6 : '),
+	time(obtenirCoup(_,6,_)),
+        initTests,
+	write('Temps IA 7 : '),
+	time(obtenirCoup(_,7,_)),
+        initTests,
+	write('Temps IA 8 : '),
+	time(obtenirCoup(_,8,_)),
+        initTests,
+	write('Temps IA 9 : '),
+	time(obtenirCoup(_,9,_)),
+        initTests,
+	write('Temps IA 10 : '),
+	time(obtenirCoup(_,10,_)),
+	initTests,
+	write('Temps IA 11 : '),
+	time(obtenirCoup(_,11,_)),
+	initTests,
+	write('Temps IA 12 : '),
+	time(obtenirCoup(_,12,_)),
+	initTests,
+	write('Temps IA 13 : '),
+	time(obtenirCoup(_,13,_)),
+	initTests,
+	write('Temps IA 14 : '),
+	time(obtenirCoup(_,14,_)),
+        initTests,
+	write('Temps IA 15 : '),
+	time(obtenirCoup(_,15,_)),
+        initTests,
+	write('Temps IA 16 : '),
+	time(obtenirCoup(_,16,_)),
+        initTests,
+	write('Temps IA 17 : '),
+	time(obtenirCoup(_,17,_)),
+        initTests,
+        write('Temps IA 18 : '),
+	time(obtenirCoup(_,18,_)),
+	initTests,
+	write('Temps IA 19 : '),
+	time(obtenirCoup(_,19,_)),
+        initTests,
+	write('Temps IA 20 : '),
+	time(obtenirCoup(_,20,_)),
+        initTests,
+	write('Temps IA 21 : '),
+	time(obtenirCoup(_,21,_)),
+        initTests,
+	write('Temps IA 22 : '),
+	time(obtenirCoup(_,22,_)),
+        write('Temps IA 23 : '),
+	time(obtenirCoup(_,23,_)),
+        initTests,
+	write('Temps IA 24 : '),
+	time(obtenirCoup(_,24,_)),
+        initTests,
+	write('Temps IA 25 : '),
+	time(obtenirCoup(_,25,_)),
+        initTests,
+        write('Temps IA 26 : '),
+	time(obtenirCoup(_,26,_)),
+	initTests,
+	write('Temps IA 27 : '),
+	time(obtenirCoup(_,27,_)),
+        initTests,
+	write('Temps IA 28 : '),
+	time(obtenirCoup(_,28,_)),
+        initTests,
+	write('Temps IA 29 : '),
+	time(obtenirCoup(_,29,_)),
+        initTests,
+	write('Temps IA 30 : '),
+	time(obtenirCoup(_,30,_)),
+        initTests,
+	write('Temps IA 31 : '),
+	time(obtenirCoup(_,31,_)),
+        initTests,
+	write('Temps IA 32 : '),
+	time(obtenirCoup(_,32,_)),
+        initTests,
+        write('Temps IA 33 : '),
+	time(obtenirCoup(_,33,_)),
+        initTests,
+	write('Temps IA 34 : '),
+	time(obtenirCoup(_,34,_)).
+
+
+initClear :-
+	retractall(case(_,_,_)).
+
+initTest :-
+	assert(case(4,1,rouge)),
+	assert(case(3,2,rouge)),
+	assert(case(2,3,rouge)),
+	assert(case(1,4,rouge)). %initInterface, play
+
+
+initTests :-
+	initClear,
+	initTest.
